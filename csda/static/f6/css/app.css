@@ -1,0 +1,24 @@
+.zlogo {height:30px; background-color: rgb(185, 232, 236);}
+.bgbse {background-color: rgb(185, 232, 236);}
+.bgtans {background-color: rgba(255,255,255,0.0);}
+.global {border-top: 1px solid rgba(54, 117, 169,0.33); padding-bottom:35px;}
+.partnerlogo {max-height:40px;}
+.sitelogo{    max-height: 57px; margin: -0.5rem;}
+.acallout{background-image: url('http://lorempixel.com/g/1920/450/abstract/');}
+.callout-home{
+    color:#c6c6c6;
+    background-image:url('http://continuum.io/sites/all/themes/continuum_foundation/images/backgrounds/tesselation-green-slate-grey.jpg');
+    background-position:top left;
+    background-repeat:no-repeat;
+    background-size:cover;
+    /*padding:0 0 50%;*/
+}
+
+.callout-home h1, h5{	color: yellow; }
+H2>.callout-home{	color: #C6C6C6; }
+H3>.callout-home{	color: #C6C6C6; }
+H4>.callout-home{	color: #C6C6C6; }
+h5>.callout-home{	color: #C6C6C6; }
+h6>.callout-home{	color: #C6C6C6; }
+
+.s550 {}

@@ -1,0 +1,234 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="Termelétrica, ENEVA, Qualidade do Ar, Bolognesi, UTE, Rio Grande, UTE-RG Monitoramento Atmosférico, Monitoramento Ambiental, Carvão, Manutenção, Clima, CO, NO, NO2, CO2, NOx, CH4, C3H8, SO2, O3, Horiba, BAM1020, Material Particulado, Poluição Atmosférica, Zimora, Modelo 3D, Metano, Monóxido de Carbono, Dióxido de Enxofre">
+	<meta name="author" content="Zimermann, H. R.">
+	<meta class="foundation-mq">
+	<title>Laboratório de Monitoramento da Qualidade do Ar - UFSM | Projetos de Monitoramento Ambiental</title>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'f6/css/foundation.css' %}" />
+
+	<!-- USer Style -->
+	<link rel="stylesheet" href="{% static 'f6/css/app.css' %}" />
+
+
+
+
+	<script src="{% static 'assets/js/vendor/modernizr.js' %}"></script>
+
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="{% static 'assets/owl-carousel/owl.carousel.css' %}">
+
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="{% static 'assets/owl-carousel/owl.theme.css' %}">
+
+
+<link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://cjabmdjcfcfdmffimndhafhblfmpjdpe/toolbar/styles/placeholder.css" type="text/css">
+<script type="text/javascript" id="cosymantecbfw_removeToolbar">(function () {				var toolbarElement = {},					parent = {},					interval = 0,					retryCount = 0,					isRemoved = false;				if (window.location.protocol === 'file:') {					interval = window.setInterval(function () {						toolbarElement = document.getElementById('coFrameDiv');						if (toolbarElement) {							parent = toolbarElement.parentNode;							if (parent) {								parent.removeChild(toolbarElement);								isRemoved = true;								if (document.body && document.body.style) {									document.body.style.setProperty('margin-top', '0px', 'important');								}							}						}						retryCount += 1;						if (retryCount > 10 || isRemoved) {							window.clearInterval(interval);						}					}, 10);				}			})();</script>
+<script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script>
+</head>
+
+<body>
+<style>.fi-social-facebook{color:dodgerblue;font-size:2rem;}.fi-social-youtube{color:red;font-size:2rem;}.fi-social-pinterest{color:darkred;font-size:2rem;}i.fi-social-instagram{color:brown;font-size:2rem;}i.fi-social-tumblr{color:navy;font-size:2rem;}.fi-social-twitter{color:skyblue;font-size:2rem;}</style>
+
+<header>
+{% block nav %}
+
+
+<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium" data-responsivetoggle="l9ztq6-responsivetoggle" style="display: none;">
+<button class="menu-icon" type="button" data-toggle=""></button>
+<div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="main-menu">
+<div class="top-bar-left">
+    <img class="sitelogo" src="{% static 'images/logolumet-trans.gif' %}" alt="Logo do Laboratório">
+</div>
+<div class="top-bar-left">
+<ul class="menu">
+<li class="menu-text">Qualidade do Ar</li>
+<li><a href="#">Home</a></li>
+<li><a href="#">Sobre</a></li>
+<li><a href="#">Contato</a></li>
+<li><a href="#">Login</a></li>
+</ul>
+</div>
+
+
+<div class="top-bar-left">
+
+    <ul class="menu vertical medium-horizontal medium-text-center dropdown" data-responsive-menu="drilldown medium-dropdown" role="menubar" data-dropdownmenu="vorubw-dropdownmenu" data-responsivemenu="d0ripj-responsivemenu">
+
+    <li class="has-submenu is-dropdown-submenu-parent is-right-arrow opens-right" role="menuitem" tabindex="0" title="Tech" aria-haspopup="true"><a href="#" tabindex="-1">Clientes</a>
+        <ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" aria-hidden="true" tabindex="-1" role="menu">
+        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="/uterg/" tabindex="-1">UTE-RG</a></li>
+        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="#" tabindex="-1">ENEVA</a></li>
+        <li role="menuitem" class="is-submenu-item is-dropdown-submenu-item" tabindex="0"><a href="http://www.ufsm.br/sulflux/" tabindex="-1">SULFLUX</a></li>
+        </ul>
+    </li>
+    </ul>
+</div>
+
+<div class="top-bar-right">
+    <ul class="menu">
+    <li><input type="search" placeholder="Search"></li>
+    <li><button type="button" class="button">Search</button></li>
+    </ul>
+</div>
+
+</div>
+
+{% endblock nav %}
+</header>
+
+ {% block content %} {% endblock %}
+
+
+{% block footer %}
+<footer>
+
+<div class="row expanded callout callout-home secondary">
+<div class="large-4 columns">
+<h5>FLICKR IMAGES</h5>
+<div class="row small-up-4">
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals/2" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals/3" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals/5" alt="image of space dog"></div>
+<div class="column"><img class="thumbnail" src="http://lorempixel.com/75/75/animals" alt="image of space dog"></div>
+</div>
+</div>
+<div class="large-4 columns">
+<h5>TAGS</h5>
+<span class="secondary label">NOx</span>
+<span class="secondary label">UVA</span>
+<span class="secondary label">MP</span>
+<span class="secondary label">CO</span>
+<span class="secondary label">SO2</span>
+<span class="secondary label">CH4</span>
+<span class="secondary label">UV</span>
+<span class="secondary label">CO2</span>
+</div>
+<div class="large-4 columns">
+<h5>SAUDAÇÃO</h5>
+<p>
+	Olá internauta! Nós do Qualidadedoar.com desejamos a você um ótimo passeio pelo nosso site.
+	Esperamos que nossos serviços e informações lhe sejam proveitosos.
+	Qualquer sugestão é bem-vinda para aprimorarmos nossas ações e lhe prestar uma agradável navegação técnica,
+	científica, precisa e informativa.
+</p>
+</div>
+</div>
+
+
+
+<!-- fotter do hans -->
+        <div class="row">
+
+			<div class="large-4 columns">
+				<h4>Contato</h4>
+				<p>
+					<script type="text/javascript">
+						eval(unescape("%77%69%79%78%79%38%39%3d%5b%27%25%37%37%25%36%35%25%36%32%25%36%64%25%36%31%25%37%33%25%37%34%25%36%35%25%37%32%27%2c%5b%27%25%36%66%25%37%32%25%36%37%27%2c%27%25%36%64%25%36%39%25%36%33%25%37%32%25%36%66%25%36%64%25%36%35%25%37%34%25%36%35%25%36%66%25%37%32%25%36%66%25%36%63%25%36%66%25%36%37%25%36%39%25%36%31%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%63%70%72%65%73%36%30%3d%27%4d%69%63%72%6f%6d%65%74%65%6f%72%6f%6c%6f%67%69%61%20%2d%20%55%46%53%4d%27%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%63%70%72%65%73%36%30%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%77%69%79%78%79%38%39%29%29%3b"));
+					</script>
+				</p>
+			</div>
+			<div class="large-4 columns">
+				<h4>Institucional</h4>
+				<ul>
+					<li><a target='_blank' href="http://www.ht-hidrotermica.com.br/site/index.php">Grupo Bolognesi</a></li>
+					<li><a target='_blank' href="http://www.ufsm.br">UFSM</a></li>
+					<li><a target='_blank' href="http://www.furg.br">FURG</a></li>
+					<li><a target='_blank' href="http://www.fepam.rs.gov.br/">FEPAM</a></li>
+				</ul>
+			</div>
+			<div class="large-4 columns">
+				<h4>Educacional</h4>
+				<p><a target='_blank' href="http://www.mma.gov.br/cidades-sustentaveis/qualidade-do-ar">Qualidade do Ar</a></p>
+			</div>
+		</div>
+		<div class="row expanded global">
+			<br>
+			<div class="large-12 columns">
+				<a target='_blank' href="https://www.python.org" title="Python.org"><img src="https://www.python.org/static/community_logos/python-powered-w-100x40.png"></a>
+				<a target='_blank' href="https://plot.ly" title="Plot.ly"><img class="partnerlogo" src="https://plot.ly/gh-pages/documentation/static//images/py-user-guide-img/image06.png"></a>
+				<a target='_blank' href="https://www.pythonanywhere.com/?affiliate_id=000b062b"><img class="partnerlogo" src="https://www.pythonanywhere.com/static/anywhere/images/logo-234x35.png"></a>
+				<a target='_blank' href="http://ad.zanox.com/ppv/?36633322C1846120"><img class="partnerlogo" src="https://img1.wsimg.com/pc/img/1/trademark/registered/gd_logo.png"></a>
+			</div>
+		</div>
+<!-- endfotter do hans -->
+
+<div class="row expanded" style="border-top:1px solid rgba(54, 117, 169,0.33); >
+<div class="medium-6 columns" ">
+<ul class="menu">
+<li><a href="#">Legal</a></li>
+<li><a href="#">Equipe</a></li>
+<li><a href="#">Parceiros</a></li>
+<li><a href="#">Explore</a></li>
+</ul>
+</div>
+<div class="medium-6 columns">
+<ul class="menu align-right">
+<li class="menu-text">Copyright © 2016 <a target='_blank' href='http://www.micrometeorologia.org'>Micrometeorologia.org - UFSM </a></li>
+</ul>
+</div>
+</div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+
+{% endblock footer %}
+
+
+
+
+
+
+
+	<script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
+	<script src="{% static 'f6/js/foundation.min.js' %}"></script>
+	<!-- Include Owl js plugin -->
+	<script src="{% static 'assets/owl-carousel/owl.carousel.js'%}"></script>
+
+	<!--User js hacks -->
+	<script src="{% static 'f6/js/app.js'%}"></script>
+
+	<script>
+
+		$(document).ready(function() {
+			//http://www.creativebloq.com/web-design/build-responsive-sites-foundation-11513848
+			$("#owl").owlCarousel({
+				navigation: true,
+				slideSpeed: 300,
+				paginationSpeed: 400,
+				singleItem: true
+			});
+		});
+	</script>
+	<style>
+		#owl .item img {
+			display: block;
+			width: 100%;
+			height: auto;
+			max-height:300px;
+		}
+	</style>
+
+
+
+</body>
+
+</html>

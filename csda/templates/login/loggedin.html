@@ -1,0 +1,131 @@
+{% extends "uterg/base.html" %}
+
+{% block content %}
+<div class="row">
+  <br>
+   	<div class='large-12 columns'>
+      <h2>Acesso concedido.</h2>
+<div class="success callout">
+<p>
+  Olá <b>{{ full_name }}</b>, você está registrado e tem acesso as áreas privativas do site.<BR>
+  Clique <a href={% url 'logout' %}><span style="color:#f00;"><i class="fi-power"> </i>aqui</span></a> para sair da área privativa ou no menu no canto superior direito.
+</p>
+</div>
+
+      <div class="row collapse">
+        <ul class="tabs" data-tabs id="example-tabs">
+  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Monitor</a></li>
+  <li class="tabs-title"><a href="#panel2">Gráficos Interativos</a></li>
+          <li class="tabs-title"><a href="#panel3">Relatórios Técnicos</a></li>
+          <li class="tabs-title"><a href="#panel4">Repositório de Dados</a></li>
+</ul>
+    <div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+
+      <h3>Monitor - BNS01 - UTERG </h3><i class='fi-loop'> </i><small> Versão atualizada em - <i>2016-01-18 15:05:39</i> UTC<br><i class='fi-rss'> </i>Ultimo envio do dados - <i> 2016-01-18 10:00:00 </i> LTC</small><hr>
+      <p>Monitores do dia.</p>
+    </div>
+    <div class="tabs-panel" id="panel2">
+        <h4>Distribuições em função da Direção do Vento</h4>
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/364.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/372.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/374.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/377.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/379.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/381.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/383.embed"></iframe>
+
+        <iframe width="49%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/385.embed"></iframe>
+
+        <hr>
+        <h4>Distribuições temporais</h4>
+        <iframe width="99%" height="350" frameborder="0" scrolling="no" src="https://plot.ly/~zrhans/362.embed"></iframe>
+
+        <br>
+    </div>
+    <div class="tabs-panel" id="panel3">
+
+
+<table class="hover" width="100%">
+<thead>
+<tr>
+<th>Ano</th>
+<th>Mês</th>
+<th>Planilha</th>
+<th>Relatório</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+<td>–</td>
+</tr>
+<tr>
+<td>2016</td>
+<td>Jan</td>
+<td>&nbsp;<a href="http://www.micrometeorologia.org/wp-content/uploads/2016/01/BNS01_XLS_16_01.xls" rel="">BNS01_XLS_16_01</a> – Incompleta</td>
+<td>–</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>Out</td>
+<td><a href="http://www.micrometeorologia.org/wp-content/uploads/2016/01/BNS01_XLS_15_10.xls" rel="">BNS01_XLS_15_10</a></td>
+<td>&nbsp;Não se aplica. Período de instalação.</td>
+</tr>
+<tr>
+<td>2015</td>
+<td>Nov</td>
+<td><a href="http://www.micrometeorologia.org/wp-content/uploads/2016/01/BNS01_XLS_15_11.xls" rel="">BNS01_XLS_15_11</a></td>
+<td>&nbsp;<a href="http://www.micrometeorologia.org/wp-content/uploads/2016/01/2015_11_Relatorio_Tecnico_UTE-RG.pdf" rel="">2015_11_Relatorio_Tecnico_UTE-RG</a></td>
+</tr>
+<tr>
+<td>&nbsp;2015</td>
+<td>Dez</td>
+<td><a href="http://www.micrometeorologia.org/wp-content/uploads/2016/01/BNS01_XLS_15_12.xls" rel="">BNS01_XLS_15_12</a></td>
+<td>&nbsp;<a href="http://www.micrometeorologia.org/wp-content/uploads/2016/01/2015_12_RelatorioTecnico_UTE-RG.pdf" rel="">2015_12_Relatorio_Tecnico_UTE-RG</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+    </div>
+    <div class="tabs-panel" id="panel4">
+      <!--p align="center"><img class="thumbnail" src="https://portalfisica.files.wordpress.com/2015/12/database_containers_shutterstock_167442308.jpg?w=100"></p-->
+    <table class="hover" width="100%">
+        <thead>
+        <tr>
+        <th>Ano</th>
+        <th>Mês</th>
+        <th>Arquivo de Dados</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>–</td>
+        <td>–</td>
+        <td>–</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    </div>
+    </div>
+  </div>
+
+
+
+
+      <br>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,150 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords" content="Termelétrica, Qualidade do Ar, Bolognesi, UTE, Rio Grande, UTE-RG Monitoramento Atmosférico, manutenção, Clima, CO, NO, NO2, CO2, NOx, CH4, C3H8, SO2, O3, Horiba, BAM1020, Material Particulado, Poluição Atmosférica, Zimora, Modelo 3D, Metano, Monóxido de Carbono, Dióxido de Enxofre">
+	<meta name="author" content="Zimermann, H. R.">
+	<title>Usina Termelétrica - Rio Grande | Projeto de Monitoramento Ambiental - Qualidade do Ar</title>
+	<link rel="stylesheet" href="{% static 'assets/css/foundation.css' %}" />
+
+	<!-- USer Style -->
+	<link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+	<link rel="stylesheet" href="{% static 'assets/css/app.css' %}" />
+	<script src="{% static 'assets/js/vendor/modernizr.js' %}"></script>
+
+
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="{% static 'assets/owl-carousel/owl.carousel.css' %}">
+
+	<!-- Default Theme -->
+	<link rel="stylesheet" href="{% static 'assets/owl-carousel/owl.theme.css' %}">
+
+</head>
+
+<body>
+
+
+	{% block nav %}
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+
+	<div class="top-bar">
+
+		<div class="top-bar-left">
+			<ul class="menu bgbse">
+				<div class="bgbse">
+					<a href="{% url 'uterg-home' %}">
+						<img class="zurb-logo zlogo" src="http://bolognesi.com.br/wp-content/themes/bolognesi2015/img/logo.png">
+					</a>
+				</div>
+			</ul>
+		</div>
+
+
+		<div class="top-bar-right">
+ 			<ul class="dropdown  menu" data-dropdown-menu>
+      <li class=""><a href="{% url 'equipamentos' %}"><i class="fi-eye"> </i>Equipamentos</a></li>
+      <li class="has-submenu">
+				<a href="#"><i class="fi-wrench"> </i>Serviços</a>
+        <ul class="submenu menu vertical" data-submenu>
+          	<li class="active"> <a href="{% url 'graficos' %}"> <i class="fi-graph-trend"> </i>Gráficos</a></li>
+						<li class=""><a href="{% url 'relatorios-tecnicos' %}"><i class="fi-page-multiple"> </i>Relatórios Técnicos</a></li>
+						<li class=""><a href="{% url 'series-de-dados' %}"><i class="fi-database"> </i>Séries de DADOS</a></li>
+        </ul>
+      </li>
+      		{% if user.username != '' %}
+					<li class="has-submenu">
+					<a href="#"><span style="color:#43b02a;"><i class="fi-torso"> </i> {{ user.username }} </span></a>
+					<ul class="submenu menu vertical" data-submenu>
+						<li class=""><a href="{% url 'loggedin' %}"><i class="fi-widget"> </i>Painel de Controle</a></li>
+						<li class="active"><a href="{% url 'logout' %}"><span style="color:#f00;"><i class="fi-power"> </i>Sair</span></a></li>
+					</ul>
+					</li>
+
+					{% else %}
+					<li class=""><a href="{% url 'login' %}"><i class="fi-key"> </i>Login</a></li>
+					{% endif %}
+    </ul>
+  	</div>
+	</div>
+
+
+
+	{% endblock nav %} {% block content %} {% endblock %} {% block footer %}
+	<footer>
+
+		<div class="row">
+			<br>
+			<div class="large-4 columns">
+				<h4>Contato</h4>
+				<p>
+					<script type="text/javascript">
+						eval(unescape("%77%69%79%78%79%38%39%3d%5b%27%25%37%37%25%36%35%25%36%32%25%36%64%25%36%31%25%37%33%25%37%34%25%36%35%25%37%32%27%2c%5b%27%25%36%66%25%37%32%25%36%37%27%2c%27%25%36%64%25%36%39%25%36%33%25%37%32%25%36%66%25%36%64%25%36%35%25%37%34%25%36%35%25%36%66%25%37%32%25%36%66%25%36%63%25%36%66%25%36%37%25%36%39%25%36%31%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%63%70%72%65%73%36%30%3d%27%4d%69%63%72%6f%6d%65%74%65%6f%72%6f%6c%6f%67%69%61%20%2d%20%55%46%53%4d%27%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%63%70%72%65%73%36%30%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%77%69%79%78%79%38%39%29%29%3b"));
+					</script>
+				</p>
+			</div>
+			<div class="large-4 columns">
+				<h4>Institucional</h4>
+				<ul>
+					<li><a target='_blank' href="http://www.ht-hidrotermica.com.br/site/index.php">Grupo Bolognesi</a></li>
+					<li><a target='_blank' href="http://www.ufsm.br">UFSM</a></li>
+					<li><a target='_blank' href="http://www.furg.br">FURG</a></li>
+					<li><a target='_blank' href="http://www.fepam.rs.gov.br/">FEPAM</a></li>
+				</ul>
+			</div>
+			<div class="large-4 columns">
+				<h4>Educacional</h4>
+				<ul>
+					<li><a href="http://www.qualidadedoar.com">Qualidadedoar.com</a></li>
+					<li><a target='_blank' href="http://www.mma.gov.br/cidades-sustentaveis/qualidade-do-ar">MMA - Qualidade do Ar</a></li>
+
+				</ul>
+				<p></p>
+			</div>
+		</div>
+		</div>
+
+		<div class="row global">
+			<br>
+			<div class="large-12 columns">
+				<a target='_blank' href="https://www.python.org" title="Python.org"><img src="https://www.python.org/static/community_logos/python-powered-w-100x40.png"></a>
+				<a target='_blank' href="https://plot.ly" title="Plot.ly"><img style="width:43px;" src="https://plot.ly/gh-pages/documentation/static//images/py-user-guide-img/image06.png"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="{% static 'assets/js/vendor/jquery.js' %}"></script>
+	<script src="{% static 'assets/js/foundation.min.js' %}"></script>
+	<!-- Include Owl js plugin -->
+	<script src="{% static 'assets/owl-carousel/owl.carousel.js'%}"></script>
+
+	<!--User js hacks -->
+	<script src="{% static 'assets/js/app.js'%}"></script>
+
+	<script>
+
+		$(document).ready(function() {
+			//http://www.creativebloq.com/web-design/build-responsive-sites-foundation-11513848
+			$("#owl").owlCarousel({
+				navigation: true,
+				slideSpeed: 300,
+				paginationSpeed: 400,
+				singleItem: true
+			});
+		});
+	</script>
+	<style>
+		#owl .item img {
+			display: block;
+			width: 100%;
+			height: auto;
+			max-height:300px;
+		}
+	</style>
+
+	{% endblock footer %}
+
+</body>
+
+</html>

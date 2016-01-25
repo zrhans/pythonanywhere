@@ -1,0 +1,80 @@
+{% extends "mestre.html" %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="callout callout-home large"><br>
+<div class="row column text-center">
+<h1>Mudando o mundo através da pesquisa</h1>
+<p class="lead">Laboratório de Monitoramento Atmosférico e Qualidade do Ar.</p>
+<a href="#" class="button large">Saiba Mais</a>
+<!--a href="#" class="button large hollow">Learn Less</a-->
+</div>
+</div>
+
+<div class="row">
+    <div class="medium-6 columns medium-push-6">
+    <img class="thumbnail" src="http://lorempixel.com/750/350/business">
+    </div>
+    <div class="medium-6 columns medium-pull-6">
+    <h2>O que fazemos em nosso laboratório.</h2>
+    <p>Somos um centro de recepção e controle de dados Atmosféricos e de Qualidade do AR monitorados remotamente.
+    Consiste em uma iniciativa do grupo do Laboratório de Micrometeorologia
+    <span>[<a href="http://micrometeorologia.org" target="_blank">Micrometeorlogia.org</a>]</span> que visa, <i>a priori</i>, dar
+    suporte à Rede Sul Brasileira de Fluxos Superficiais e Mudanças Climáticas
+    <span>[<a href="http://www.ufsm.br/sulflux" target="_blank">Rede Sulflux</a>]</span>
+    e aos projetos de monitoramento ambiental <span>[<a href="http://www.qualidadedoar.com" target="_blank">Qualidadedoar.com</a>]</span> da Universidade Federal de Santa Maria.
+    </p>
+    </div>
+</div>
+
+<div class="row">
+<div class="medium-4 columns">
+<h3>Coleta e controle de Dados</h3>
+<p>
+Dados Meteorológicos e Micrometeorológicos de turbulência Atmosférica,
+Estimativas de Fluxos de Carbono e Monitoramento da Qualidade do Ar,
+Visualização de dados estatísticos e em tempo real, tanto em forma gráfica, como tabular, de maneira
+interativa.
+ </p>
+</div>
+
+<div class="medium-4 columns">
+<h3>Acadêmico</h3>
+<p>
+	Por estar vinculado a uma instituição de ensino, pesquisa e extensão (UFSM), o Clima RS oferece oportunidades
+	de estágio acadêmico (curricular e extra curricular), fomentando, mediante a prática instrumental e a leitura
+	técnica sobre física da atmosfera, a formação científico-intelectual de seus integrantes.
+
+</p>
+</div>
+<div class="medium-4 columns">
+<h3>Ações</h3>
+<p>
+	 Mediante o planejamento, instalação, manutenção e controle de dados,
+	 realizamos o gerenciamento e a análise de dados climáticos e micrometeorológicos, para gerar produtos
+	interativos, sob demanda de nossos usuários.
+</p>
+</div>
+
+</div>
+<hr>
+<div class="row column">
+<ul class="vertical medium-horizontal menu expanded text-center">
+<li><a href="#"><div class="stat">8</div><span>Estações</span></a></li>
+<li><a href="#"><div class="stat">3</div><span>Websites</span></a></li>
+<li><a href="#"><div class="stat">95</div><span>App</span></a></li>
+<li><a href="#"><div class="stat">2</div><span>Relatórios</span></a></li>
+<li><a href="#"><div class="stat">1</div><span>Artigos</span></a></li>
+</ul>
+</div>
+<hr>
+<div class="row column">
+<h3>Nossas últimas medidas</h3>
+</div>
+<div class="row medium-up-3 large-up-4">
+   {% include 'thb_uterg.html' %}
+</div>
+
+
+
+{% endblock content %}

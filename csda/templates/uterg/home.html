@@ -1,0 +1,73 @@
+{% extends "uterg/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="row">
+	<div class="large-12 columns">
+		<div id="owl" class="owl-carousel owl-theme">
+			<div class="item">
+				<img src="{% static 'assets/img/owlimg2.png' %}" />
+			</div>
+			<div class="item">
+				<img src="http://portosmercados.com.br/site/wp-content/uploads/2014/09/Suape-01.jpg" />
+			</div>
+			<div class="item">
+				<img src="http://lorempixel.com/960/300/nature/Sustentabilidade" />
+			</div>
+			{% include "bns_owl.html" %}
+		</div>
+	</div>
+</div>
+
+<br>
+
+<div class="row">
+	<div class="large-12 columns">
+		<h1>
+			UTE-RG
+		</h1>
+	</div>
+
+	<hr/>
+	<div class="large-6 columns">
+		<br>
+		<h4>Qualidade do ar</h4>
+		<p>
+			De uma forma geral, a qualidade do ar é produto da interação de um complexo conjunto de fatores dentre os quais destacam-se a magnitude das emissões, a topografia e as condições meteorológicas da região, favoráveis ou não à dispersão dos poluentes.
+		</p>
+	</div>
+	<div class="large-6 columns">
+<br>
+		<h4>Gestão da qualidade do ar</h4>
+		<p>
+			A gestão da qualidade do ar tem como objetivo garantir que o desenvolvimento sócio-econômico ocorra de forma sustentável e ambientalmente segura. Para tanto, se fazem necessárias ações de prevenção, combate e redução das emissões de poluentes e dos efeitos
+			da degradação do ambiente atmosférico.
+		</p>
+	</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+	<div class="large-12 columns row-entidades">
+
+		<div class="medium-3 large-3 text-center columns"><br><br> 
+			<img src="http://bolognesi.com.br/wp-content/themes/bolognesi2015/img/logo.png">
+		</div>
+		<div class="medium-3 large-3 text-center column"><br> 
+			<img src="http://site.ufsm.br/arquivos/static/images/logo_ufsm/brasao.png">
+		</div>
+		<div class="medium-3 large-3 text-center column">
+			<img src="http://www.ufrgs.br/5cbeu/wp-content/uploads/2011/10/logo_furg2.jpg">
+		</div>
+		<div class="medium-3 large-3 text-center column">
+			<img src="http://www.cjenergetica.com.br/wp-content/uploads/2010/03/logo-fepam1.jpg">
+		</div>
+ 
+	</div>
+</div>
+
+{% endblock content %}
