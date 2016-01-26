@@ -23,7 +23,7 @@
 # Registers:
 
 # File marks:
-'0  1  6  ~/.gitignore
+'0  1  0  ~/.gitignore
 '1  1  0  ~/.git/MERGE_MSG
 '2  3  9  ~/README.md
 '3  5  25  ~/.bashrc
@@ -35,7 +35,7 @@
 '9  2  9  ~/w3/bns/cron.sh
 
 # Jumplist (newest first):
--'  1  6  ~/.gitignore
+-'  1  0  ~/.gitignore
 -'  1  0  ~/.git/MERGE_MSG
 -'  3  9  ~/README.md
 -'  1  0  ~/README.md
@@ -132,15 +132,18 @@
 -'  1  0  ~/w3/inf.txt
 -'  1  0  ~/w3/inf.txt
 -'  5  25  ~/.bashrc
--'  71  0  ~/pyscripts/plyteste.py
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	"	1	6
-	^	1	7
-	.	1	6
-	+	1	6
+	"	1	0
+	^	1	0
+	.	2	0
+	+	1	7
+	+	1	3
+	+	2	3
+	+	1	1
+	+	2	0
 
 > ~/.git/MERGE_MSG
 	"	1	0
