@@ -17,3 +17,5 @@
 [user]
 	email = zrhans@gmail.com
 	name = zrhans
+[push]
+	default = matching
